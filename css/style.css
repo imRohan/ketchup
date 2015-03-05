@@ -413,9 +413,10 @@ and (-webkit-device-pixel-ratio: 2) {
 }
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
- .wrapper{
-     margin-top:5%;
- }
+.welcomeText{
+ margin-top: -900px;   
+}
+
 }
 
 /* Larger than tablet */
@@ -475,9 +476,11 @@ and (-webkit-device-pixel-ratio: 2) {
 
 
 .symbol {
-    width=10%;
-    height=10%;
-    margin-top: 10px;
+    width=20%;
+    height=20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
 }
 
 #pomNum {
@@ -502,3 +505,4 @@ and (-webkit-device-pixel-ratio: 2) {
     margin:0 auto;
     margin-top:6%;
 }
+
