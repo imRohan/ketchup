@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Lovingly crafted by Rohan Likhite -->
-    
+
 <!--Things to do
 
 media q for desktops
@@ -30,6 +30,7 @@ Pomodoro link
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600,900" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- CSS
@@ -52,26 +53,27 @@ Pomodoro link
     <div class="container">
 
         <div class="wrapper">
-<div id="sec">0</div>
+           
             <div id="yes">
                 <div id="leveled">
-                    <img class="symbol" src="images/logo.svg">
-                    
+                    <img id="labelIcon" class="symbol" src="images/logo.svg">
+
                     <div id="timer">0</div>
                     <span class="title">Min.</span>
-                    
+
                     <div id="pomNum">0</div>
                     <span class="title">Pomodoro.</span>
-                    
-                    
+
+
                 </div>
                 <div id="notLeveled">
                     <img class="symbol" src="images/logo.svg">
                     <div id="welcomeText">
-                    <h5>Place your phone down to start the timer.</h5>
-                        <h5>25min = 1 Pomodoro</h5>
-                        
-                        </div>
+                        <h5 id="line1">Place your phone down to start the timer.</h5>
+                        <h5 id="line2">25min = 1 Pomodoro</h5>
+                        <h3 id="total"></h3>
+
+                    </div>
 
                 </div>
 
@@ -87,7 +89,7 @@ Pomodoro link
     <div id="footer">
         <br/>
         <h1>Ketchup.</h1>
-        <h3> A Pomodoro timer</h3>
+        <h3 id="bottomTag"> A Pomodoro timer</h3>
     </div>
 
     </div>
