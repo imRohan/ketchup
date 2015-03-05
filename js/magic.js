@@ -11,6 +11,7 @@ var sec = 0;
 var min = 0;
 var pomodoros = 0;
 var pomMins = 2;
+var oneMin = 2;
 var breakTime = false;
 var resume = false;
 var lastPom = 0;
@@ -33,8 +34,9 @@ function stopWatch() {
     if (pomodoros > 0 && breakTime) {
         document.body.style.backgroundColor = "#2ECC71";
         document.getElementById("labelIcon").src = "images/success.svg";
-        document.getElementById("labelIcon").className += "symbol";
+        document.getElementById("labelIcon").className = "symbol";
         document.getElementById("bottomTag").innerHTML = "Take a 5 min break";
+        
 
     }
     if (!breakTime) {
@@ -42,21 +44,24 @@ function stopWatch() {
         document.getElementById("labelIcon").className = "symbol fa-spin";
         document.getElementById("bottomTag").innerHTML = "25 min = 1 Pomodoro";
     }
-    min = Math.floor(sec / 10);
+    min = Math.floor(sec / oneMin);
     pomodoros = Math.floor(min / pomMins);
     if (pomodoros - lastPom == 1) {
         breakTime = true;
     }
     minDisplay = min % pomMins;
-    sec++;
-    console.log(sec);
     document.getElementById("timer").innerHTML = minDisplay;
     document.getElementById("pomNum").innerHTML = pomodoros;
+    sec++;
+    console.log(sec);
+  
 
 }
 
 function stopClock() {
     //alert(resume);
+    document.getElementById("timer").innerHTML = "";
+    document.getElementById("pomNum").innerHTML = "";
     if (!resume) {
         sec = 0;
         pomodoros = 0;
@@ -64,9 +69,7 @@ function stopClock() {
         window.clearInterval(clock);
     }
     window.clearInterval(clock);
-    pomodoros = lastPom;
-    document.getElementById("timer").innerHTML = "";
-    document.getElementById("pomNum").innerHTML = "";
+    pomodoros = lastPom;    
     clicked = false;
 }
 
@@ -104,8 +107,9 @@ if (window.DeviceMotionEvent == undefined) {
                 document.body.style.backgroundColor = "#E26A6A";
             }
             if (lastPom > 0) {
-                document.getElementById("line1").innerHTML = "You can take a 5 min break";
-                document.getElementById("total").innerHTML = lastPom + "<br/> Pomodoros Completed";
+                document.getElementById("line1").innerHTML = "Take a little break";
+                document.getElementById("line2").innerHTML = "WOAH!";
+                document.getElementById("total").innerHTML = "<b>" + lastPom + "<br/>Poms Done";
                 document.body.style.backgroundColor = "#2ECC71";
             }
 

@@ -397,30 +397,77 @@ hr {
 
 
 }
+/* Larger than mobile */
+@media (max-width: 400px) {
+
+
+}
 
 /* Smaller than phablet (also point when grid becomes active) */
 @media (max-width: 550px) {
 .wrapper {
     margin-top:30%
 }
+    #pomNum{
+     margin-top:-5%;   
+    }
+    .title{
+     margin-top: -10%;   
+    }
+    #footer h1{
+     font-size: 3em;   
+    }
 }
 
+/*iphone 6 */
 @media only screen and (max-device-width: 667px) 
 and (-webkit-device-pixel-ratio: 2) {
 .wrapper {
     margin-top:30%
 }
 }
+
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
 .welcomeText{
  margin-top: -900px;   
 }
 
+#total{
+    
+}
+#line1{
+    
+}
+#line2{
+    
+}
+#timer{
+   margin-bottom: 4%; 
+}
+.title{
+    margin-top: -5%;
+}
+#pomNum{
+    margin-bottom:5px;
+    margin-top:5%;
+}
+
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+#timer{
+   margin-bottom: 4%; 
+}
+.title{
+    margin-top: -3%;
+}
+#pomNum{
+    margin-bottom:5px;
+    margin-top:5%;
+}
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
@@ -489,7 +536,7 @@ and (-webkit-device-pixel-ratio: 2) {
     font-weight: 700;
     font-size: 5em;
     margin-bottom:5px;
-    margin-top:-5%;
+    
     font-family: 'Arvo', serif;
     
     
@@ -501,7 +548,7 @@ and (-webkit-device-pixel-ratio: 2) {
     display:block;
     text-transform: uppercase;
     font-weight:900;
-    margin-top: -10%;
+    
 
     
 }
@@ -510,6 +557,10 @@ and (-webkit-device-pixel-ratio: 2) {
     width: 60%;
     height:auto;
     margin:0 auto;
-    margin-top:10%;
+    margin-top:17%;
 }
 
+
+#total {
+    margin-top:2%;
+}
