@@ -400,21 +400,21 @@ hr {
 
 /* Smaller than phablet (also point when grid becomes active) */
 @media (max-width: 550px) {
- .mainStuff{
-     margin-top:35%;
- }
+.wrapper {
+    margin-top:40%
+}
 }
 
 @media only screen and (max-device-width: 667px) 
 and (-webkit-device-pixel-ratio: 2) {
- .mainStuff{
-     margin-top:35%;
- }
+.wrapper {
+    margin-top:40%
+}
 }
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
- .mainStuff{
-     margin-top:20%;
+ .wrapper{
+     margin-top:7%;
  }
 }
 
@@ -445,7 +445,8 @@ and (-webkit-device-pixel-ratio: 2) {
 
 
 #timer {
-    font-size:4em;
+   font-weight: 900;
+    font-size: 6em;
 }
 
 #bottle {
@@ -472,12 +473,14 @@ and (-webkit-device-pixel-ratio: 2) {
    
 }
 
-.wrapper {
-    
-    margin-top:40%
-}
 
 .symbol {
     width=10%;
     height=10%;
+}
+
+#pomNum {
+    font-weight: 600;
+    font-size: 5em;
+    
 }

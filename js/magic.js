@@ -5,8 +5,9 @@ var az = 0;
 
 var clicked = false;
 var sec = 0;
+var min = 0;
 var pomodoros = 0;
-var time = 2;
+var time = 10;
 
 function startClock() {
     if (clicked === false) {
@@ -18,20 +19,25 @@ function startClock() {
 }
 
 function stopWatch() {
-    if(sec % time > 0){
-        pomodoros++;        
-    }
-    sec++;    
-    document.getElementById("timer").innerHTML = sec;
+    min = Math.round(sec / 60);
+    pomodoros = Math.round(min / 25);
+    sec++; 
+    document.getElementById("sec").innerHTML = sec;
+    document.getElementById("timer").innerHTML = min;
+    if(pomodoros >= 1){
     document.getElementById("pomNum").innerHTML = pomodoros;
+    }
 }
 
 function stopClock() {
     window.clearInterval(clock);
     sec = 0;
     pomodoros = 0;
-    document.getElementById("timer").innerHTML=0;
+    min = 0;
+    document.getElementById("timer").innerHTML="";
+   
     document.getElementById("pomNum").innerHTML = "";
+    
     clicked = false;
 }
 
