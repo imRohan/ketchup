@@ -19,14 +19,13 @@ function startClock() {
 }
 
 function stopWatch() {
-    min = Math.round(sec / 60);
-    pomodoros = Math.round(min / 25);
+    min = Math.floor(sec / 60);
+    pomodoros = Math.floor(min / 25);
     sec++; 
     document.getElementById("sec").innerHTML = sec;
     document.getElementById("timer").innerHTML = min;
-    if(pomodoros >= 1){
     document.getElementById("pomNum").innerHTML = pomodoros;
-    }
+    
 }
 
 function stopClock() {
@@ -70,11 +69,6 @@ if (window.DeviceMotionEvent == undefined) {
 
     }
 
-    setInterval(function () {
-        document.getElementById("xlabel").innerHTML = "X: " + ax;
-        document.getElementById("ylabel").innerHTML = "Y: " + ay;
-        document.getElementById("zlabel").innerHTML = "Z: " + az;
-
-    }, delay);
+   
 }
 
