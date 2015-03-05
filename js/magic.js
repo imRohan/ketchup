@@ -51,13 +51,13 @@ if (window.DeviceMotionEvent == undefined) {
             stopClock() 
             document.getElementById("leveled").style.display = "none";
             document.getElementById("notLeveled").style.display = "block";
-            document.body.style.background = "#e74c3c";
+            document.body.style.backgroundColor = "#e74c3c";
 
         } else {
             startClock()
             document.getElementById("notLeveled").style.display = "none";
             document.getElementById("leveled").style.display = "block";
-            document.body.style.background = "#D24D57";
+            document.body.style.backgroundColor = "#D24D57";
 
 
         }
