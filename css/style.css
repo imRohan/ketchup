@@ -426,6 +426,14 @@ and (-webkit-device-pixel-ratio: 2) {
     margin-top:30%
 }
 }
+/*iphone 5 */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+
+
+}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
@@ -468,6 +476,7 @@ and (-webkit-device-pixel-ratio: 2) {
     margin-top:5%;
 }
 }
+
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
