@@ -10,10 +10,10 @@ var clicked = false;
 var sec = 0;
 var min = 0;
 var pomodoros = 0;
-var pomMins = 2;
-var oneMin = 2;
-var breakTime = false;
-var resume = false;
+var pomMins = 25; //minutes
+var oneMin = 60; //seconds
+var breakTime = false; //after one pom
+var resume = false; 
 var lastPom = 0;
 var minDisplay = 0;
 var clock;
@@ -62,7 +62,7 @@ function stopClock() {
     //alert(resume);
     document.getElementById("timer").innerHTML = "";
     document.getElementById("pomNum").innerHTML = "";
-    if (!resume) {
+    if (!resume && pomodoros >0) {
         sec = 0;
         pomodoros = 0;
         min = 0;
