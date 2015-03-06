@@ -11,7 +11,7 @@ var sec = 0;
 var min = 0;
 var pomodoros = 0;
 var pomMins = 25; //minutes
-var oneMin = 60; //seconds
+var oneMin = 3; //seconds
 var breakTime = false; //after one pom
 var resume = false; 
 var lastPom = 0;
@@ -62,7 +62,7 @@ function stopClock() {
     //alert(resume);
     document.getElementById("timer").innerHTML = "";
     document.getElementById("pomNum").innerHTML = "";
-    if (!resume && pomodoros >0) {
+    if (!resume && pomodoros > 0) {
         sec = 0;
         pomodoros = 0;
         min = 0;
@@ -74,12 +74,13 @@ function stopClock() {
 }
 
 function pauseClock() {
-    //alert("on pause");
+    alert("on pause");
 
     clicked = false;
     breakTime = false;
     lastPom = pomodoros;
     resume = true;
+   
 
 
 
@@ -102,9 +103,16 @@ if (window.DeviceMotionEvent == undefined) {
                 pauseClock();
                 stopClock();
             } else if (!breakTime) {
-                stopClock()
+                stopClock()                
                 document.getElementById("bottomTag").innerHTML = "A Pomodoro Timer";
                 document.body.style.backgroundColor = "#E26A6A";
+                
+                if(minDisplay > 0){
+                  document.getElementById("line1").innerHTML = "Place your phone down to resume the timer.";
+                  document.getElementById("total").innerHTML = "Don't Stop!";
+                  document.getElementById("line2").innerHTML = "";
+                  document.body.style.backgroundColor = "#96CEB4";  
+                }
             }
             if (lastPom > 0) {
                 document.getElementById("line1").innerHTML = "Take a little break";
