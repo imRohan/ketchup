@@ -8,13 +8,13 @@ It is very simple to use.
 2. Place your phone down to start the timer
 
 ---
-##ToDo
+## ToDo
 - media queries
 - sound
 - break timer
 - help
 
-###App States and UI/UX
+### App States and UI/UX
 
 <img src="http://i.imgur.com/Nq2jbrn.jpg" width="100%" />
 
@@ -24,16 +24,16 @@ Ketchup has 4 states. Start, Idle, Work, and Break. The user can navigate betwee
 The UI for the app is very straightforward and simple. Users are notified of background tasks via animated images, and are notified of state changes via the changing of background colours and text. 
 
 
-###Conclusion
+### Conclusion
 
 Overall this sprint was an amazing experience. Building something within 24 hours on my own was challenging and it taught me a lot about agile development. There are many things which I wish to add to Ketchup (audible alerts, more features, help), and will be doing so in the coming weeks.
 
 <img src="http://i.imgur.com/gmnUVLI.png" width="200" />
 
-###Legal
+### Legal
 Pomodoro Technique® and Pomodoro™ are registered and filed trademarks owned by Francesco Cirillo. Ketchup is not affiliated by, associated with nor endorsed by Francesco Cirillo.
 
-###Credits
+### Credits
 Ketchup bottle designed by [Madame Jules](http://thenounproject.com/mmejules/)<br/>
 Tomato Logo designed by [Marco Olgio](http://thenounproject.com/olgio)
 
